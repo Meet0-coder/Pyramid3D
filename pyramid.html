@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rotating 3D Pyramid - WebGL</title>
+    <style>
+      body {
+        background: #111;
+        color: white;
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+      canvas {
+        border: 1px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Rotating 3D Pyramid</h2>
+    <canvas id="glCanvas" width="600" height="400"></canvas>
+
+    <br /><br />
+
+    <button id="toggleBtn">Pause</button>
+    <label>
+      Speed:
+      <input
+        type="range"
+        id="speedSlider"
+        min="0"
+        max="0.05"
+        step="0.005"
+        value="0.01"
+      />
+    </label>
+
+    <script src="pyramid.js"></script>
+  </body>
+</html>
